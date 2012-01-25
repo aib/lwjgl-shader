@@ -1,0 +1,13 @@
+These are a simple set of wrapper classes to make working with shaders in LWJGL
+(Minecraft) easier. They should be easy to use:
+
+try {
+	myShader = new Program()
+		.attachShader(new Shader(GL20.GL_VERTEX_SHADER,   new FileReader("myShader.vert")).compile())
+		.attachShader(new Shader(GL20.GL_FRAGMENT_SHADER, new FileReader("myShader.frag")).compile())
+		.linkProgram();
+} catch (FileNotFoundException e) {
+	...
+} catch (ShaderException e) {
+	...
+}
