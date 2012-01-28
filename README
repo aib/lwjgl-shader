@@ -5,7 +5,7 @@ try {
 	myShader = new Program()
 		.attachShader(new Shader(GL20.GL_VERTEX_SHADER,   new FileReader("myShader.vert")).compile())
 		.attachShader(new Shader(GL20.GL_FRAGMENT_SHADER, new FileReader("myShader.frag")).compile())
-		.linkProgram();
+		.link();
 } catch (FileNotFoundException e) {
 	...
 } catch (ShaderException e) {
