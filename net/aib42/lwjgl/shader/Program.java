@@ -84,6 +84,6 @@ public class Program
 
 	public String getProgramInfoLog()
 	{
-		return GL20.glGetShaderInfoLog(programID, GL20.glGetProgram(programID, GL20.GL_INFO_LOG_LENGTH));
+		return GL20.glGetProgramInfoLog(programID, GL20.glGetProgram(programID, GL20.GL_INFO_LOG_LENGTH));
 	}
 }
