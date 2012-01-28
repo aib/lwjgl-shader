@@ -35,7 +35,7 @@ public class Program
 		return this;
 	}
 
-	public Program linkProgram() throws ShaderException
+	public Program link() throws ShaderException
 	{
 		GL20.glLinkProgram(programID);
 
